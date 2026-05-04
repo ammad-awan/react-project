@@ -13,20 +13,22 @@ export default function App() {
   return (
     <Router>
       <Routes>
+
+        {/* Default route → Signup */}
+        <Route path="/" element={<Navigate to="/signup" replace />} />
+
         {/* Auth Routes */}
-        <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/verification-code" element={<VerificationCode />} />
         <Route path="/account-created" element={<AccountCreated />} />
 
-        {/* Dashboard Route */}
+        {/* Dashboard */}
         <Route path="/dashboard" element={<Dashboard />} />
 
-        {/* Landing/Home - redirect to dashboard */}
-        <Route path="/" element={<Navigate to="/signup" replace />} />
+        {/* 404 fallback → signup (NOT dashboard) */}
+        <Route path="*" element={<Navigate to="/signup" replace />} />
 
-        {/* 404 - redirect to dashboard */}
-        <Route path="*" element={<Navigate to="/dashboard" replace />} />
       </Routes>
     </Router>
   );
