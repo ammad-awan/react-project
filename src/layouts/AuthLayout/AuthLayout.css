@@ -1,0 +1,28 @@
+.auth-layout {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8f9fc 0%, #f3f5fa 100%);
+  padding: 20px;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 1100px;
+  background: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0px 0px 72px 8px rgba(98, 110, 132, 0.12);
+  display: flex;
+  min-height: 600px;
+}
+
+@media (max-width: 768px) {
+  .auth-container {
+    flex-direction: column;
+    border-radius: 20px;
+    min-height: auto;
+  }
+}

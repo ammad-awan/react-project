@@ -1,0 +1,108 @@
+.main-screen {
+  width: 100%;
+  height: 1017px;
+  position: relative;
+  box-shadow: 0px 0px 72px 8px rgba(98, 110, 132, 0.12);
+  border-radius: 30px;
+  overflow: hidden;
+
+  background-image: url("/Main-Screen@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.already-have-account-container {
+  position: absolute;
+  right: 270px;
+  bottom: 239px;
+}
+
+.log-in {
+  font-weight: 600;
+}
+
+.wrapper-frame-0 {
+  position: absolute;
+  top: calc(50% - 504px);
+  left: -1108px;
+  width: 1768px;
+  height: 1019px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 75px 30px;
+  box-sizing: border-box;
+
+  background-image: url("/wrapper-frame-0@3x.png");
+  background-size: cover;
+}
+
+.main-screen-inner {
+  position: absolute;
+  top: calc(50% - 509px);
+  right: 0;
+  width: 831px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 34px 27px;
+}
+
+/* FORM */
+.login-container {
+  width: 100%;
+}
+
+.auto-layout-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* LABEL */
+.label {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* INPUT */
+.input-box input,
+.password-box input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cecece;
+  border-radius: 12px;
+  outline: none;
+  font-size: 12px;
+}
+
+/* PHONE */
+.phone-box {
+  display: flex;
+  gap: 10px;
+}
+
+.country-code {
+  width: 80px;
+  border: 1px solid #cecece;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+/* BUTTON SAME AS LOGIN */
+.log-in-wrapper {
+  background-color: #0457b4;
+  border-radius: 60px;
+  padding: 19px 21px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.log-in2 {
+  color: #fff;
+  font-weight: 600;
+}

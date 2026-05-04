@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+.signup-left-panel {
+  flex: 1;
+  background-image: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.welcome-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.welcome-message {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff; /* black background pe visible */
+  margin: 0;
+  font-family: Poppins, sans-serif;
+
+  position: absolute;
+  bottom: 20px;  /* card ke bottom pe */
+  left: 20px;
+
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6); /* readability */
+}
+
+.welcome-subtext {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fdfcfced;
+  margin: 0;
+}
+
+.welcome-dots-container {
+  width: 200px;
+  height: auto;
+}
+
+/* Right Panel */
+.signup-right-panel {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 50px;
+  position: relative;
+  gap: 15px;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #999;
+  transition: color 0.3s;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+.signup-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+.signup-tab {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0457b4;
+  flex: 1;
+}
+
+.signup-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 10px 0;
+  font-family: Poppins, sans-serif;
+}
+
+.phone-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.phone-input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.country-code {
+  width: 85px;
+  padding: 14px;
+  border: 1px solid #cecece;
+  border-radius: 12px;
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.country-code:focus {
+  outline: none;
+  border-color: #0457b4;
+}
+
+.phone-number {
+  flex: 1;
+  padding: 14px;
+  border: 1px solid #cecece;
+  border-radius: 12px;
+  outline: none;
+  font-size: 12px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.phone-number:focus {
+  border-color: #0457b4;
+  box-shadow: 0 0 0 3px rgba(4, 87, 180, 0.1);
+}
+
+.phone-number.error {
+  border-color: #ff3b00;
+}
+
+.error-message {
+  font-size: 11px;
+  color: #ff3b00;
+  margin-top: 2px;
+}
+
+.form-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #1a1a2e;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.required {
+  color: #ff3b00;
+  font-weight: 600;
+}
+
+.form-disclaimer {
+  font-size: 11px;
+  color: #666;
+  text-align: center;
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.form-disclaimer a {
+  color: #0457b4;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.form-disclaimer a:hover {
+  text-decoration: underline;
+}
+
+.signup-btn {
+  margin-top: 10px;
+}
+
+.signin-divider {
+  font-size: 12px;
+  color: #999;
+  font-weight: 600;
+  text-align: center;
+  margin: 15px 0 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.social-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #e0e0e0;
+  transition: all 0.3s;
+  background: #f9f9f9;
+}
+
+.social-btn:hover {
+  background: #f0f0f0;
+  border-color: #d0d0d0;
+  transform: translateY(-2px);
+}
+
+.social-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.login-link {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-link .login-anchor {
+  color: #0457b4;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+  margin-left: 4px;
+}
+
+.login-link .login-anchor:hover {
+  color: #033f8b;
+}
+
+@media (max-width: 768px) {
+  .signup-left-panel {
+    display: none;
+  }
+
+  .signup-right-panel {
+    padding: 60px 30px 40px;
+  }
+}

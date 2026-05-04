@@ -1,0 +1,33 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import "./App.css";
+
+// Pages
+import Login from "./pages/Login/Login";
+import Signup from "./pages/Signup/Signup";
+import VerificationCode from "./pages/VerificationCode/VerificationCode";
+import AccountCreated from "./pages/AccountCreated/AccountCreated";
+import Dashboard from "./pages/Dashboard/Dashboard";
+
+export default function App() {
+  return (
+    <Router>
+      <Routes>
+        {/* Auth Routes */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/verification-code" element={<VerificationCode />} />
+        <Route path="/account-created" element={<AccountCreated />} />
+
+        {/* Dashboard Route */}
+        <Route path="/dashboard" element={<Dashboard />} />
+
+        {/* Landing/Home - redirect to dashboard */}
+        <Route path="/" element={<Navigate to="/dashboard" replace />} />
+
+        {/* 404 - redirect to dashboard */}
+        <Route path="*" element={<Navigate to="/dashboard" replace />} />
+      </Routes>
+    </Router>
+  );
+}

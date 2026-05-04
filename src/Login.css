@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  --BLACK: #1b1b1b;
+  --color-gray: rgba(255, 255, 255, 0.2);
+  --color-orangered: #ff3b00;
+  --color-whitesmoke: #f8f8f8;
+  --Primary-Colors: #0457b4;
+  --STRKE: #cecece;
+  --TEXT: #5d6a85;
+  --WHITE: #fff;
+
+  --gap-4: 4px;
+  --gap-8: 8px;
+  --gap-26: 26px;
+
+  --padding-0: 0;
+  --padding-12: 12px;
+
+  --br-12: 12px;
+  --br-30: 30px;
+  --br-40: 40px;
+
+  --font-inter: Inter;
+  --font-poppins: Poppins;
+
+  --fs-12: 12px;
+  --fs-16: 16px;
+  --fs-22: 22px;
+
+  --lh-18: 18px;
+  --lh-20: 20px;
+}
+
+/* MAIN SCREEN */
+.main-screen {
+  width: 100%;
+  height: 1017px;
+  position: relative;
+  box-shadow: 0px 0px 72px 8px rgba(98, 110, 132, 0.12);
+  border-radius: 30px;
+  overflow: hidden;
+
+  background-image: url("/Main-Screen@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+/* LEFT TEXT */
+.already-have-account-container {
+  position: absolute;
+  right: 270.1px;
+  bottom: 239.7px;
+}
+
+.log-in {
+  font-weight: 600;
+}
+
+.vector-icon {
+  position: absolute;
+  right: 453.2px;
+  bottom: 266.8px;
+  width: 12.4px;
+  height: 23.3px;
+  object-fit: cover;
+}
+
+/* WRAPPER */
+.wrapper-frame-0 {
+  position: absolute;
+  top: calc(50% - 504.5px);
+  left: -1108px;
+  width: 1768px;
+  height: 1019px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  padding: 75.6px 30px;
+  box-sizing: border-box;
+
+  background-image: url("/wrapper-frame-0@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* RIGHT PANEL */
+.main-screen-inner {
+  position: absolute;
+  top: calc(50% - 509.5px);
+  right: 0;
+
+  width: 831px;
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 34px 27px 206px;
+}
