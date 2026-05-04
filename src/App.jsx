@@ -23,7 +23,7 @@ export default function App() {
         <Route path="/dashboard" element={<Dashboard />} />
 
         {/* Landing/Home - redirect to dashboard */}
-        <Route path="/" element={<Navigate to="/dashboard" replace />} />
+        <Route path="/" element={<Navigate to="/signup" replace />} />
 
         {/* 404 - redirect to dashboard */}
         <Route path="*" element={<Navigate to="/dashboard" replace />} />
